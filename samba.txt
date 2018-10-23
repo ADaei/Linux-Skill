@@ -1,0 +1,23 @@
+==安裝samba============================================
+
+sudo apt-get install samba
+
+****更改設定
+sudo vi /etc/samba/smb.conf
+
+//更改
+workgroup = XXX
+
+//加入檔案尾端
+[Public]
+path = /home/UserName/Public
+available = yes
+browseable = yes
+read only = no
+writable = yes
+public = yes
+create mask = 0644
+directory mask = 0755
+
+****重啟samba
+sudo service smbd restart

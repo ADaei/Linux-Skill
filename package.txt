@@ -1,0 +1,17 @@
+==乾淨移除安裝套件====================================
+
+sudu apt-get purge xxx
+
+****查看未乾淨移除的套件(只有remove未purge)
+dpkg -l | grep ^rc
+
+****單項移除未乾淨移除的套件
+dpkg -l | grep ^rc | awk '{print $2}'
+
+****批次移除殘留套件
+sudo apt-get purge `dpkg -l | grep ^rc | awk '{print $2}'`
+
+
+==更新所有套件=========================================
+
+sudo apt-get update && sudo apt-get upgrade -y

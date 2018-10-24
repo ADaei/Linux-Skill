@@ -1,6 +1,6 @@
 ==乾淨移除安裝套件====================================
 
-sudu apt-get purge xxx
+sudo apt-get purge xxx
 
 ****查看未乾淨移除的套件(只有remove未purge)
 dpkg -l | grep ^rc

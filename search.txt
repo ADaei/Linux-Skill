@@ -1,0 +1,8 @@
+========Find File with string========
+
+find ./serachDir -name *string*
+
+========Find string in files with file extension========
+
+grep "string" -inR ./searchDir/ --include=\*.{xml,txt}
+

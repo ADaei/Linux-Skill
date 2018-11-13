@@ -1,0 +1,8 @@
+----------------------------------------------------
+Format USB
+----------------------------------------------------
+1. use "dmesg" to check log, get the USB device number
+2. unmount it
+sudo umount .dev.sdb1
+3. format it to fat (use "mkfs" to check the support format)
+sudo mkfs.vfat /dev/sdb1 -I

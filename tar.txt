@@ -1,8 +1,15 @@
 ==壓縮/解壓縮=========================================
 .tar
-zip:    tar cvf FileName.tar DirName
-unzip:  tar xvf FileName.tar
+package : tar
+zip     : tar cvf FileName.tar DirName
+unzip   : tar xvf FileName.tar
 
 .tar.gz
-zip:    tar zcvf FileName.tar.gz DirName
-unzip:  tar zxvf FileName.tar.gz
+package : gzip
+zip     : tar zcvf FileName.tar.gz DirName
+unzip   : tar zxvf FileName.tar.gz
+
+.tar.bz2
+package : bzip2
+zip     : tar jcvf FileName.tar.bz2 DirName
+unzip   : tar jxvf FileName.tar.bz2

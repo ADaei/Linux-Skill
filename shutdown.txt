@@ -1,0 +1,23 @@
+==shut down now==
+shutdown -h now
+
+==shut down after 30 min==
+shutdown -h +30
+
+==shut down at 21:33==
+shutdown -h 21:33
+
+==cancel shutdown==
+shutdown -c
+
+==reboot==
+shutdown -r
+reboot
+
+==force shutdown==
+halt -f
+poweroff -f
+
+==check record==
+last -x shutdown
+last -x reboot

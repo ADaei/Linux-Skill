@@ -1,0 +1,8 @@
+==When create share folder on Virtual Box Ubuntu and no authority to access==
+
+sudo usermod -G vboxsf -a yourUserName
+//Note vboxsf is your share folder group name.
+
+==User following command to check all groups==
+groups
+sudo cat /etc/group

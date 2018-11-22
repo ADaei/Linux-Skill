@@ -1,6 +1,6 @@
 ==安裝samba============================================
 
-sudo apt-get install samba 
+sudo apt-get install samba -y
 
 ****更改設定
 sudo vi /etc/samba/smb.conf

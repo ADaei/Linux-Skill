@@ -1,9 +1,11 @@
 ==Compare two directory==
-diff -r dir1 dir2 | grep dir1 | awk '{print $4}' > difference1.txt
+diff -r --no-dereference dir1 dir2 | grep dir1 | awk '{print $4}' > difference1.txt
 
 ## diff -r dir1 dir2
     shows which files are only in dir1 and those only in dir2 and also the changes of the files present in both directories if any.
 ## diff -r dir1 dir2 | grep dir1
     shows which files are only in dir1
+## --no-dereference
+    could ignore shortcut
 ## awk
     to print only filename.

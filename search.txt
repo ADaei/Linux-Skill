@@ -6,3 +6,5 @@ find ./serachDir -name *string*
 
 grep "string" -inR ./searchDir/ --include=\*.{xml,txt}
 
+Reference:
+https://blog.gtwang.org/linux/unix-linux-find-command-examples/

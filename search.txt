@@ -8,3 +8,4 @@ grep "string" -inR ./searchDir/ --include=\*.{xml,txt}
 
 Reference:
 https://blog.gtwang.org/linux/unix-linux-find-command-examples/
+https://www.openfoundry.org/tw/foss-programs/8628--linux-

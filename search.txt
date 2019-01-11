@@ -1,6 +1,6 @@
 ========Find File with string========
 
-find ./serachDir -name *string*
+find ./serachDir -name '*string*'
 
 ========Find string in files with file extension========
 

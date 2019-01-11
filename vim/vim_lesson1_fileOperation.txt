@@ -1,0 +1,32 @@
+## Definition in Lessons ##
+$path               # the file path
+$file               # the file name & file extension
+Command             # enter in normal/command mode for non-content operation.
+Hot Key             # enter in input mode for content operation.
+
+## Open vim without file in command line ##
+vim
+
+## Create/open file in command line ##
+vim $path/$file
+
+## Command: Open file in vim ##
+:e $path/$file
+
+## Enter/leave input mode in vim ##
+i                   # enter input mode, you can edit the file content in this mode
+ESC / Ctrl+C        # leave input mode, this will enter normal/command mode for command input
+
+## Command: Save file in vim ##
+:w                  # write current file
+:up                 # update current file (same as :w ??)
+:w $path/$file      # save to new file
+:up $path/$file     # save to new file
+
+## Command: Exit & save file in vim ##
+:x                  # save and leave
+:wq!                # "!" means "force", could write read-only file
+
+## Command: Exit without save file in vim ##
+:q                  # quit
+:q!                 # "!" means "force", force to abort changes. 

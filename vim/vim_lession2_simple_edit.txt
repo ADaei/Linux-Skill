@@ -1,0 +1,40 @@
+## Start edit after use "i" to enter input mode ##
+Arraow Key          # move input cursor
+
+## Start edit after use "ESC" or "CTRL+C" to enter normal/command mode ##
+  ## Page operation ##
+CTRL+f              # go front 1 page (Down)
+CTRL+b              # go back 1 page (Up)
+CTRL+d              # go down half page
+CTRL+u              # go up half page
+  ## line operation ##
+w                   # move to next word (separate word by non-letter/non-number/non-special char include space.)
+W                   # move to next word (separate word by space.)
+b                   # move to previous word (separate word by non-letter/non-number/non-special char include space.)
+B                   # move to previous word (separate word by space.)
+0 (ZERO)            # move to head of line.
+$                   # move to tail of line.
+^                   # move to first non-empty char of line
+g_                  # move to latest non-empty char of line
+  ## Insert operation ##
+i                   # insert char at cursor position
+a                   # insert char after cursor position
+o                   # insert new line below
+O                   # insert new line above
+:r $file            # insert content of $ file to next line
+:r! $cmd            # insert the command result to next line
+
+yw                  # copy current word
+y0                  # copy from current char to head of line
+y$                  # copy from current char to tail of line
+yy                  # copy current line
+nyy                 # copy from current line to current+n line
+
+p                   # past the copy content
+
+x/delete            # delete current char
+dw                  # delete current word (with test, it only delete current char to word end??)
+d0                  # delete current char to head of line
+d$                  # delete current char to tail of line
+dd                  # delete current line
+ndd                 # delete from current line to current+n line

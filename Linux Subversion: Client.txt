@@ -1,0 +1,46 @@
+[Install in linux]
+sudo apt-get install subversion
+
+[Import]
+(sometimes NOT work well, suggest to use "co --> add --> ci" to replace "import --> ci")
+svn import --no-ignore project_directory http://DOMAIN/svn_project
+svn import --no-ignore project_directory file:///SVN_PATH/svn_project 
+
+[Checkout]
+svn co http://SVN_PATH/svn_project
+svn co file:///SVN_PATH/svn_project
+svn co -r 12 file:///var/lib/svn/dev/projects   #-r = revision number
+
+[List]
+svn ls http://SVN_PATH/svn_project
+svn ls file:///SVN_PATH/svn_project
+
+[Update to head]
+svn up                          #terminal should at checkout directory
+
+[Commit]
+svn ci -m "check-in message"    #terminal should at checkout directory
+
+[Status (check difference)]
+svn st                          #terminal should at checkout directory
+
+[Add]
+svn add filename                #terminal should at checkout directory
+svn add --no-ignore directory   #terminal should at checkout directory
+
+[Move (change file name)]
+svn mv filename new_filename
+
+[Revert (before commit)]
+svn revert [file | directory]
+
+[SVN file status]
+?: Not exist
+A: new add
+C: Changed and auto combination FAIL, need manual combination
+D: new delete
+M: Changed
+U: updated
+
+reference website:
+https://blog.longwin.com.tw/2007/07/svn_tutorial_2007/

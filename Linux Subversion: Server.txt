@@ -1,0 +1,41 @@
+[Install]
+sudo apt-get install subversion
+
+[Uninstall]
+sudo apt-get remove --purge subversion
+
+[Create directory for repository use]
+sudo mkdir /home/svn
+sudo chmod 777 -R /home/svn
+svnadmin create /home/svn
+
+[Configuration]
+vi passwd 
+  [users]     --> user setting
+  A=123456    --> user test1 password is 123456
+  B=123456    --> user test2 password is 123456
+
+vi authz 
+  [/]         --> all directory auth settings
+  X=rw        --> user X could read + write 
+  A=r         --> user A could only read
+  B=r         --> user B could only read
+  *=          --> other user could do nothing
+
+vi svnserve.conf (remove '#' of following lines, note there should not have sapce at line head.)
+  anon-access = read    #anonymous user could read
+  auth-access = write   #authenticated user could write
+  password-db = passwd  #account configuration file name
+  authz-db = authz      #authentication configuration file name
+  realm = /home/svn     #repository path
+  
+[Start Server]
+svnserve -d -r /home/svn
+
+[Stop Server]
+killall svnserve
+
+[URL for client to access]
+svn://server_ip
+
+Reference: https://hk.saowen.com/a/2c5d91e61486deebb49b8a62893ff758acc629966b07c716b77a6fbe0263e363

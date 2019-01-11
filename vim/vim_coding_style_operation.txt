@@ -1,0 +1,3 @@
+## Remove tail space ##
+
+:%s/\s*$//ge

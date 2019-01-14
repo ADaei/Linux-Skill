@@ -6,6 +6,9 @@ find ./serachDir -name '*string*'
 
 grep "string" -inR ./searchDir/ --include=\*.{xml,txt}
 
+grep -E "word1|word2|word3"       # search string include word1, word2, or word3
+grep -v 'mmm\|nnn'                # search string exclude mmm, or nnn.
+
 Reference:
 https://blog.gtwang.org/linux/unix-linux-find-command-examples/
 https://www.openfoundry.org/tw/foss-programs/8628--linux-

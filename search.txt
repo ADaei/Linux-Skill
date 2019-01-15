@@ -4,7 +4,7 @@ find ./serachDir -name '*string*'
 
 ========Find string in files with file extension========
 
-grep "string" -inR ./searchDir/ --include=\*.{xml,txt}
+grep "string" -inR ./searchDir/ --include=Kconfig --include=*.mk --include=config.*
 
 grep -E "word1|word2|word3"                   # search string include word1, word2, or word3
 grep "ord" -inR . | grep -v 'word\|order'     # search string with "ord" but exclude word, or order.

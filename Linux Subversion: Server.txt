@@ -41,3 +41,4 @@ svn://server_ip
 Reference:
 https://hk.saowen.com/a/2c5d91e61486deebb49b8a62893ff758acc629966b07c716b77a6fbe0263e363 (install & config)
 https://hk.saowen.com/a/fe11aa713a40709c4c6af3598e098b8fa28f028a7f87304eeb38f703a7d92486 (auto start)
+https://blog.csdn.net/hanziyuan08/article/details/78151527

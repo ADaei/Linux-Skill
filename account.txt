@@ -1,0 +1,12 @@
+[Add user]
+sudo adduser <USER>
+
+[Delete user]
+sudo deluser <USER>
+
+[User group]
+groups <USER>               # to check the group of user
+usermod -aG sudo <USER>     # add <USER> to sudo group (admin)
+
+[Reference]
+https://www.digitalocean.com/community/tutorials/how-to-add-and-delete-users-on-ubuntu-16-04

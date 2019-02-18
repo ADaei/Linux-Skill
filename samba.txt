@@ -16,8 +16,11 @@ browseable = yes
 read only = no
 writable = yes
 public = yes
-create mask = 0644
-directory mask = 0755
+create mask = 0644          #660
+directory mask = 0755       #2770
 
 ****重啟samba
 sudo service smbd restart
+
+[reference]
+https://www.twbsd.org/cht/book/ch20.htm

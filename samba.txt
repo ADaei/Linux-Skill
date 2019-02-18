@@ -25,9 +25,12 @@ directory mask = 2770
 sudo service smbd restart
 
 ****重新設定已存在的檔案權限
-sudo find <FILEPATH> -type d -print0 | xargs -0 chmod 2770   # change dirs
-sudo find <FILEPATH> -type f -print0 | xargs -0 chmod 660    # change files
+sudo find <SHARE_DIR_PATH> -type d -print0 | xargs -0 chmod 2770   # change dirs
+sudo find <SHARE_DIR_PATH> -type f -print0 | xargs -0 chmod 660    # change files
 sudo chown <USER>:<USERGROUP> <FILEPATH>                     # change owner
+
+****check group of account
+grouops <USER>
 
 ****windows 清除連線帳密
 net use * /delete

@@ -11,12 +11,14 @@ workgroup = XXX
 //加入檔案尾端
 [Public]
 path = /home/UserName/Public
+write list = XXX
+valid users = XXX
 available = yes
 browseable = yes
 read only = no
 writable = yes
 public = yes
-create mask = 0644          #660
+create mask = 0644          #0660
 directory mask = 0755       #2770
 
 ****重啟samba

@@ -25,5 +25,8 @@ directory mask = 0755       #2770
 ****重啟samba
 sudo service smbd restart
 
+****windows 清除連線帳密
+net use * /delete
+
 [reference]
 https://www.twbsd.org/cht/book/ch20.htm

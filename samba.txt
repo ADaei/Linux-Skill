@@ -7,6 +7,7 @@ sudo vi /etc/samba/smb.conf
 
 //更改
 workgroup = XXX
+map to guest = Never
 
 //加入檔案尾端
 [Public]

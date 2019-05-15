@@ -26,3 +26,5 @@ Basic Concept:
 <git merge>
 
 <git reset>
+
+<git log>

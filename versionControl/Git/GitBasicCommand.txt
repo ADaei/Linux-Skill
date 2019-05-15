@@ -28,3 +28,7 @@ Basic Concept:
 <git reset>
 
 <git log>
+
+<git diff>
+
+<git fetch>

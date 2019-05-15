@@ -1,5 +1,28 @@
+Basic Concept:
+  Workspace         : local linux directory you work on
+  Index/Stage       : Staging area for temporary save
+  Local Repository  : Local code base
+  Remote Repository : Remote code base
+
+<git init>================
+  example:        $ git init
+  use timing:     establish version control on current directory (create .git dir)
+
 <git clone>================
   example:        $ git clone http://192.168.1.1/xxx
   use timing:     When first time create porject
   data flow:      Remote repository --> Local repository
 
+<git add>
+
+<git commit>
+
+<git push>
+
+<git pull>
+
+<git checkout>
+
+<git merge>
+
+<git reset>

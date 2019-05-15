@@ -13,3 +13,8 @@ unzip   : tar zxvf FileName.tar.gz
 package : bzip2
 zip     : tar jcvf FileName.tar.bz2 DirName
 unzip   : tar jxvf FileName.tar.bz2
+
+.7z
+package : p7zip-full
+zip     : 7z a FileName.7z FileName -pPASSWORD
+unzip   : 7z x FileName.7z

@@ -1,0 +1,8 @@
+<mode change>================
+a       : enter insert mode
+ctrl+c  : enter command mode
+
+<command>========
+dd      : delete this line
+yy      : copy this line
+p       : paste

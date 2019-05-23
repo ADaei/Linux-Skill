@@ -11,7 +11,7 @@ map to guest = Never
 
 //加入檔案尾端
 [Public]
-path = /home/UserName/Public
+path = /home/<UserName>/Public
 valid users = <USER>
 available = yes
 browseable = yes
@@ -30,7 +30,7 @@ sudo find <SHARE_DIR_PATH> -type f -print0 | xargs -0 chmod 660    # change file
 sudo chown <USER>:<USERGROUP> <FILEPATH>                     # change owner
 
 ****check group of account
-grouops <USER>
+groups <USER>
 
 ****windows 清除連線帳密
 net use * /delete

@@ -12,7 +12,7 @@ map to guest = Never
 //加入檔案尾端
 [Public]
 path = /home/<UserName>/Public
-valid users = <USER>
+valid users = <UserName>
 available = yes
 browseable = yes
 read only = no
@@ -23,6 +23,9 @@ directory mask = 2770
 
 ****重啟samba
 sudo service smbd restart
+
+****為samba user設定密碼
+sudo smbpasswd -a <UserName> <Password>
 
 ****重新設定已存在的檔案權限
 sudo find <SHARE_DIR_PATH> -type d -print0 | xargs -0 chmod 2770   # change dirs
@@ -36,5 +39,6 @@ groups <USER>
 net use * /delete
 
 [reference]
+http://barrybounds.pixnet.net/blog/post/39932379-samba%E5%A6%82%E4%BD%95%E6%96%B0%E5%A2%9E%E4%BD%BF%E7%94%A8%E8%80%85%E5%B8%B3%E8%99%9F
 https://www.twbsd.org/cht/book/ch20.htm
 https://www.ubuntu-tw.org/modules/newbb/viewtopic.php?post_id=183878

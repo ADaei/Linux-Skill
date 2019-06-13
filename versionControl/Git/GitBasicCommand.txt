@@ -29,7 +29,10 @@ Basic Concept:
 <git commit>          Stage --> Local Repository
 <git commit --amend>  Stage --> Local Repository, but merge into last commit
 
-<git push>          Local Repository --> Remote Repository
+<git push>================
+  example:        $ git push origin <branch>      //push <branch> into remote repository "origin"
+  use timing:     push local change to remote change, include branch change
+  data flow:      Local Repository --> Remote Repository
 
 <git pull>
 

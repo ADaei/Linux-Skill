@@ -13,10 +13,14 @@ Basic Concept:
   use timing:     When first time create porject
   data flow:      Remote repository --> Local repository
 
-<git branch>        show branches
-<git branch XX>     create branch XX
-<git branch -d XX>  remove branch XX
-<git checkout XX>   switch to branch XX
+<git branch>==============
+  example:
+    $ git branch        //show branches
+    $ git branch XX     //create branch XX
+    $ git branch -d XX  //remove branch XX
+    $ git checkout XX   //switch to branch XX
+  use timing:     When you need a branch to do something and prevent to change trunk
+  data flow:      NA
 
 <git status>        check all file status
 

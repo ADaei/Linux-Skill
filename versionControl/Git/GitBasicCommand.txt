@@ -18,11 +18,14 @@ Basic Concept:
 <git branch -d XX>  remove branch XX
 <git checkout XX>   switch to branch XX
 
-<git add>
+<git status>        check all file status
 
-<git commit>
+<git add>           Workspace --> State
 
-<git push>
+<git commit>          Stage --> Local Repository
+<git commit --amend>  Stage --> Local Repository, but merge into last commit
+
+<git push>          Local Repository --> Remote Repository
 
 <git pull>
 

@@ -34,6 +34,16 @@ Basic Concept:
   use timing:     push local change to remote change, include branch change
   data flow:      Local Repository --> Remote Repository
 
+<git stash>================
+  example:
+    $ git stash list                // show all stash
+    $ git stash show stash@{IDX}    // show indicated stash
+    $ git stash save "X"            // create stash with message X
+    $ git stash apply stash@{IDX}   // apply indicated stash (NOT remove from list)
+    $ git stash drop stash@{IDX}    // remove indicated stash from list
+    $ git stash pop stash@{IDX}     // apply + remove
+    $ git stash unapply stash@{IDX} // unapply indicated stash
+
 <git pull>
 
 <git checkout>

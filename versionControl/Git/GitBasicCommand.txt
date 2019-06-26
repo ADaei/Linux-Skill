@@ -42,7 +42,7 @@ Basic Concept:
     $ git stash apply stash@{IDX}   // apply indicated stash (NOT remove from list)
     $ git stash drop stash@{IDX}    // remove indicated stash from list
     $ git stash pop stash@{IDX}     // apply + remove
-    $ git stash unapply stash@{IDX} // unapply indicated stash
+    $ git stash show -p stash@{IDX} | git apply -R  // unapply indicated stash
 
 <git pull>
 

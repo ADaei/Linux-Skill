@@ -19,6 +19,8 @@ Basic Concept:
     $ git branch XX     //create branch XX
     $ git branch -d XX  //remove branch XX
     $ git checkout XX   //switch to branch XX
+    $ git branch -m <oldname> <newname> //rename branch
+    $ git branch -m <newname> //rename current branch
   use timing:     When you need a branch to do something and prevent to change trunk
   data flow:      NA
 

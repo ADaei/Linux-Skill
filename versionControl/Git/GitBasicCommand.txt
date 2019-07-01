@@ -26,7 +26,7 @@ Basic Concept:
 
 <git status>        check all file status
 
-<git add>           Workspace --> State
+<git add>           Workspace --> Sta
 
 <git commit>          Stage --> Local Repository
 <git commit --amend>  Stage --> Local Repository, but merge into last commit

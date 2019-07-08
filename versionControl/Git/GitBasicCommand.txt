@@ -47,14 +47,25 @@ Basic Concept:
     $ git stash show -p stash@{IDX} | git apply -R  // unapply indicated stash
 
 <git pull>
+  exmaple:
+    $ git pull origin <beanch>    // pull branch code
 
 <git checkout>
+  example:
+    $ git checkout <branch>       //switch to a local branch
 
 <git merge>
 
 <git reset>
 
 <git log>
+  example:
+    $ git log
+
+<git show>
+  example:
+    $ git show <commit ID>              //show all change of a commit ID
+    $ git show <commit ID> <file path>  //show change of a file in a commit ID
 
 <git diff>
 

@@ -53,6 +53,7 @@ Basic Concept:
 <git checkout>
   example:
     $ git checkout <branch>       //switch to a local branch
+    $ git checkout <file>         //recover a file
 
 <git merge>
 

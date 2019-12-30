@@ -70,6 +70,9 @@ Basic Concept:
     $ git show <commit ID>              //show all change of a commit ID
     $ git show <commit ID> <file path>  //show change of a file in a commit ID
 
-<git diff>
+<git diff & apply>
+  example:
+    $ git diff >> x.diff
+    $ git apply x.diff
 
 <git fetch>

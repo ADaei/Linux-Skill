@@ -58,6 +58,8 @@ Basic Concept:
 <git merge>
 
 <git reset>
+  example:
+    $ git reset --hard commit_id  //Back to indicate commit id
 
 <git log>
   example:

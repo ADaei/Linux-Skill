@@ -9,6 +9,11 @@ grep "string" -inR ./searchDir/ --include=Kconfig --include=*.mk --include=confi
 grep -E "word1|word2|word3"                   # search string include word1, word2, or word3
 grep "ord" -inR . | grep -v 'word\|order'     # search string with "ord" but exclude word, or order.
 
+========Find string in files & replace them========
+
+grep -rl "target" . | xargs -i sed -i 's/target/newString/g' {}
+
 Reference:
 https://blog.gtwang.org/linux/unix-linux-find-command-examples/
 https://www.openfoundry.org/tw/foss-programs/8628--linux-
+http://ottoshare.blogspot.com/2012/06/linux.html

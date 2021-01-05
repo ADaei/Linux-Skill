@@ -1,0 +1,9 @@
+$ssh-keygen
+1. show save path (just enter)
+2. enter password 
+3. enter password again
+
+$cat .ssh/id_rsa.pub
+
+paste key to git server website
+(Setting --> SSH and GPG Keys --> Add SSH key)

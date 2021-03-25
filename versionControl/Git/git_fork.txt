@@ -1,3 +1,4 @@
+[Commit to fork]
 1. Create a fork on your website.
 2. git remote add LREPO GPATH
    LREPO: <local repsository name, you create here>
@@ -16,3 +17,6 @@
    LREPO: <local repsository name>
    LBRCH: <local branch name>
    RBRCH: <remote branch name>
+
+[Change commit message at remote]
+1. git config --global user.email example@email.com

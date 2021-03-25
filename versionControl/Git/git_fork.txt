@@ -1,13 +1,18 @@
 1. Create a fork on your website.
-2. git remote add X Y
-   X: <local repsository name, you create here>
-   Y: <git clone path of the fork>
-   after add it, you can use "git remote -v" to check it exist
-3. git fetch X
-   X: <local repsository name>
-4. git branch --track A X/Z
-   A: <local branch name, you create here>
-   X: <local repsository name>
-   Z: <remote branch name>, you can check list by "git remote -r"
-5. git check A
-   A: <local branch name>
+2. git remote add LREPO GPATH
+   LREPO: <local repsository name, you create here>
+   GPATH: <git clone path of the fork>
+   ## After add it, you can use "git remote -v" to check it exist
+3. git fetch LREPO
+   LREPO: <local repsository name>
+4. git branch --track LBRCH LREPO/RBRCH
+   LBRCH: <local branch name, you create here>
+   LREPO: <local repsository name>
+   RBRCH: <remote branch name>, you can check list by "git remote -r"
+5. git checkout LBRCH
+   LBRCH: <local branch name>
+6. change code, git add & commit
+7. git push LREPO LBRCH:RBRCH
+   LREPO: <local repsository name>
+   LBRCH: <local branch name>
+   RBRCH: <remote branch name>

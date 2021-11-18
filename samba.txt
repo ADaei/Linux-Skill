@@ -20,6 +20,9 @@ writable = yes
 public = yes
 create mask = 0660
 directory mask = 2770
+wins support = yes
+local master = yes
+preferred master = yes
 
 ****重啟samba
 sudo service smbd restart
